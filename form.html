@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+</head>
+
+<body>
+    <h2>Student Admission Form</h2>
+    <form>
+        <label>Full Name</label>
+        <input type="text"><br><br>
+
+    <label for="">Email Adress</label>
+    <input type="email">
+    <br><br>
+    <label >Address</label><br>
+    <textarea  cols="30" rows="10"></textarea><br><br>
+    <label for="image">Upload Image</label>
+    <input hidden id="image" type="file" accept="image/*"><br><br>
+    <label >Gender</label>
+    <input type="radio" name="gender">male
+    <input type="radio" name="gender">Female<br><br>
+    <label >State</label>
+    <select >
+        <option >Utter Pradesh</option>
+        <option >Bihar</option>
+        <option >Delhi</option>
+        
+    </select><br><br>
+    <label >Previous Study</label>
+    <input list="course" type="text">
+    <datalist id="course">
+        <option >Btech</option>
+        <option >MCA</option>
+        <option >BCA</option>
+    </datalist><br><br>
+    
+    <input type="checkbox"> I accept Terms & Condition
+    <details>
+        <summary>Terms & Condition</summary>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam consectetur officiis autem assumenda illo cumque dignissimos amet distinctio voluptas exercitationem, minus quas quibusdam neque nobis sed? Laboriosam vel iste quaerat
+
+    </details>
+
+    </form>
+</body>
+
+</html>

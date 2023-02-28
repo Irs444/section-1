@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <style>
+        *{
+
+            font-family: Montserrat;
+        }
+        :root{
+            --theme-color:blueviolet; 
+        }
+.mycard{
+    background-color: white;
+    width: 20%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: yellowgreen; */
+    /* background-image: linear-gradient(90deg, #0000ff70, #892be2b3); */
+    background-image: url('https://www.hdwallpapers.in/download/artistic_landscape_mountains_trees_sunset_purple_sky_background_minimalist_hd_minimalism-HD.jpg');
+    background-size: cover;
+}
+
+.Form-Tittle{
+    text-align: center;
+    font-size: 30px;
+    font-family: Montserrat;
+    color: blue;
+    
+}
+label, .myinput, button, a{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.myinput{
+     border: none; 
+    border-bottom: 2px solid blueviolet ;
+    padding: 10px;
+     outline: none; 
+    margin-bottom: 20px;
+    background-color: #892be22f ;
+
+}
+.links{
+    display: flex;
+    justify-content: center;
+
+}
+.links a img{
+    max-height: 30px;
+    margin-block: 20px;
+    margin-inline: 20px;
+}
+.signup{
+    text-align: center;
+    margin-block: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: blueviolet;
+}
+.mybtn{
+    margin-block: 10pxt;
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: blueviolet;
+
+}
+.mylink{
+    text-align: right;
+    text-decoration: none;
+    color: blueviolet;
+}
+    </style>
+</head>
+<body >
+    <div class="mycard">
+        <h3 class="Form-Tittle">Login Form</h3>
+        <form >
+        <label>Email Address</label>
+        <input type="text" class="myinput" placeholder="Enter the emailaddress here">
+        <label>Password</label>
+        <input type="text" class="myinput" placeholder="Enter the password here">
+        <a href="" class="mylink">Forget password</a>
+        <button class="mybtn">Submit</button>
+        <div class="links">
+            <a href=""><img src="./fb-logo.png" alt=""></a>
+            <a href=""><img src="./tw-logo.png" alt=""></a>
+            <a href=""><img src="./go-logo.png" alt=""></a>
+        </div>
+        <p class="signup">Not a member?<a href="">Signup</a></p>
+        </form>
+    </div>
+</body>
+</html>

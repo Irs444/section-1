@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        .box {
+             background-color: #ff00004f; 
+             border: 3px solid #ff000052; 
+             width: 100%; 
+             margin: 10px; 
+        }
+
+        .parents1 {
+             display: flex; 
+               flex-direction: column;  
+              justify-content: center;   
+             height: 50vh; 
+             align-items:start; 
+        }
+        .box2{
+             background-color: #40ff004f; 
+            border: 3px solid #00ff0dbb; 
+        }
+        .parents2{
+             display: grid; 
+            /* grid-template-columns: 400px 200px 600px;  */
+             /* grid-template-columns: 2fr 1fr 3fr;  */
+                grid-template-columns: repeat(3,1fr);    
+              /* grid-template-rows: repeat(3,1fr); */
+              
+             gap: 10px; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parents1">
+        <div class="box">
+            <h2> column 1</h2>
+        </div>
+        <div class="box">
+            <h2> column 2</h2>
+        </div>
+        <div class="box">
+            <h2> column 3</h2>
+        </div>
+
+    </div>
+    <div class="parents2">
+        <div class="box2">
+            <h2>column 1</h2>
+        </div>
+        <div class="box2">
+            <h2>column 2</h2>
+        </div>
+        <div class="box2">
+            <h2>column 3</h2>
+        </div>
+
+    </div>
+</body>
+
+</html>
